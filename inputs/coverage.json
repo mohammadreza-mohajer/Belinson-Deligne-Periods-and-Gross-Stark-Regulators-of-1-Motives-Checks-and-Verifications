@@ -1,0 +1,417 @@
+{
+  "numbered": [
+    {
+      "id": "2.1",
+      "title": "Inertia invariants and the Euler polynomial",
+      "proofs": [
+        "BD.Euler.blockFactor",
+        "BD.Euler.constantFactor",
+        "BD.Euler.correction",
+        "BD.Realizations.inertiaKernel"
+      ],
+      "checked": "Block determinant and quotient correction, including vanishing denominators. An injective tame map preserves the valuation kernel.",
+      "boundary": "Construction of the semiabelian valuation, Kummer restriction, duality, inertia exactness, comparison with geometric Frobenius."
+    },
+    {
+      "id": "2.2",
+      "title": "Quadratic twist at an inert or ramified prime",
+      "proofs": [
+        "BD.Euler.inertSignFactor",
+        "BD.Euler.constantFactor"
+      ],
+      "checked": "Euler determinant of the sign line. The zero-dimensional determinant is covered by the general block formula.",
+      "boundary": "Descent of the quadratic twist and identification of its actual inertia module."
+    },
+    {
+      "id": "2.3",
+      "title": "Real comparison defect",
+      "proofs": [
+        "BD.Realizations.splitRange",
+        "BD.Linear.projectionLoss"
+      ],
+      "checked": "Range after cancelling an invertible abelian diagonal map, and the dimension of a kernel.",
+      "boundary": "The Betti and de Rham comparison maps, real plus parts, and the exact sequence for a general semiabelian extension."
+    },
+    {
+      "id": "3.1",
+      "title": "Relative norm tori and the leading term",
+      "proofs": [
+        "BD.Linear.relativeLift",
+        "BD.Linear.extensionDet",
+        "BD.Linear.periodProduct",
+        "BD.Series.complexLeading",
+        "BD.Series.finiteProduct",
+        "BD.Series.exactOrder"
+      ],
+      "checked": "Constructive lifting in the relative divisor kernel, product of comparison determinants and formal Taylor orders and coefficients.",
+      "boundary": "Dirichlet units, the class group, the integral comparison lattices and the complex analytic class number formula."
+    },
+    {
+      "id": "3.2",
+      "title": "Comparison with the graded Euler product",
+      "proofs": [
+        "BD.Euler.correction",
+        "BD.Series.term_coeff"
+      ],
+      "checked": "Effect of adjoining finite vanishing factors once their expansions have been identified.",
+      "boundary": "Arithmetic interpretation of the augmented map and its relationship with Scholl’s comparison."
+    },
+    {
+      "id": "3.3",
+      "title": "Arbitrary critical lattice",
+      "proofs": [
+        "BD.Linear.criticalProjection",
+        "BD.Series.splitCancellation",
+        "BD.Series.exactOrder",
+        "BD.Linear.extensionDet"
+      ],
+      "checked": "The rank inequality and equality of kernels at equal dimension, cancellation of split poles and the determinant step.",
+      "boundary": "Construction of the split projection from actual valuations, saturation by relative units, real logarithmic periods and the rationality claim for the motive."
+    },
+    {
+      "id": "4.1",
+      "title": "Relative p-adic residue",
+      "proofs": [
+        "BD.Linear.residueQuotient",
+        "BD.Linear.periodProduct",
+        "BD.Linear.extensionDet"
+      ],
+      "checked": "Cancellation of Euler factors in the quotient, valid with zero numerator, and determinant multiplicativity.",
+      "boundary": "Colmez’s formula, p-adic zeta germs, normalized regulators, Leopoldt’s condition and Brumer’s abelian case."
+    },
+    {
+      "id": "4.2",
+      "title": "Adding primes away from p",
+      "proofs": [
+        "BD.Series.finiteProduct",
+        "BD.Series.power",
+        "BD.Series.exactOrder"
+      ],
+      "checked": "Powers of finite Taylor factors, their expected coefficient and the nonvanishing criterion.",
+      "boundary": "Construction of the local logarithm, identification of each cyclotomic Euler factor and its nonzero slope."
+    },
+    {
+      "id": "4.3",
+      "title": "Split pole cancellation at p",
+      "proofs": [
+        "BD.Series.splitCancellation",
+        "BD.Linear.criticalProjection",
+        "BD.Series.exactOrder",
+        "BD.Linear.residueQuotient"
+      ],
+      "checked": "Pole cancellation and the critical rank bound for the finite model.",
+      "boundary": "The relative unit comparison, Leopoldt hypotheses and identification of the reduced p-adic zeta quotient."
+    },
+    {
+      "id": "4.4",
+      "title": "Algebraicity versus the global unit condition",
+      "proofs": [
+        "BD.Characters.quadraticIndependence",
+        "BD.Realizations.oddLogKernel"
+      ],
+      "checked": "Valuation and nonzero unit logarithm force both coefficients in a rational relation to vanish, once the multiplicative-to-additive reduction is given.",
+      "boundary": "The rational kernel of a local logarithm, classification of the units, Baker’s theorem and the Baker–Brumer theorem on linear independence of logarithms over algebraic coefficients."
+    },
+    {
+      "id": "4.5",
+      "title": "The real quadratic example at 11",
+      "proofs": [
+        "BD.Arithmetic.quadraticNorms",
+        "BD.Arithmetic.splitAtEleven"
+      ],
+      "checked": "Exact norm numerator and the two roots of 5 modulo 11.",
+      "boundary": "Identification of the two prime ideals, valuations, period nonvanishing and the graded special-value conclusion."
+    },
+    {
+      "id": "5.1",
+      "title": "Single-embedding logarithm on the odd part",
+      "proofs": [
+        "BD.Realizations.oddLogKernel",
+        "BD.Realizations.affineEvaluation"
+      ],
+      "checked": "Triviality of the intersection of odd vectors with an even logarithm kernel, and the abstract affine-injectivity implication.",
+      "boundary": "Local logarithm kernel, Baker–Brumer and the p-adic analytic subgroup theorem for the additive coordinate."
+    },
+    {
+      "id": "5.2",
+      "title": "Simultaneous affine independence of regulator entries",
+      "proofs": [
+        "BD.Realizations.affineEvaluation",
+        "BD.Characters.affineTrace"
+      ],
+      "checked": "Affine separation when the image of an injective logarithm meets the base scalars trivially.",
+      "boundary": "Nondegeneracy of the compressed group-algebra pairing and identification of its evaluation with an actual norm logarithm."
+    },
+    {
+      "id": "5.3",
+      "title": "Restriction and residue-degree scaling",
+      "proofs": [
+        "BD.Matrices.normalizeValuations",
+        "BD.Matrices.descentConjugacy",
+        "BD.Matrices.determinantConjugacy",
+        "BD.Matrices.branchShift"
+      ],
+      "checked": "The inverse order for a row-scaled valuation matrix, branch translation and conjugacy under a compatible basis change.",
+      "boundary": "Norms of local-field extensions, character projection of the p-unit groups and the field-enlargement diagram."
+    },
+    {
+      "id": "5.4",
+      "title": "Dual lifts and every principal minor",
+      "proofs": [
+        "BD.Matrices.liftGraph",
+        "BD.Matrices.existsLift_iff_det",
+        "BD.Matrices.principalMinorExpansion",
+        "BD.Applications.grossExactIffNoPureLift"
+      ],
+      "checked": "The graph of the obstruction, the singularity criterion and the multivariate determinant expansion in every finite rank, including zero.",
+      "boundary": "The local reciprocity convention and the identification of the cohomological connecting map with the obstruction row by cup product and Shapiro."
+    },
+    {
+      "id": "6.1",
+      "title": "Common Artin blocks",
+      "proofs": [
+        "BD.Linear.extensionCharpoly",
+        "BD.Matrices.determinantConjugacy",
+        "BD.Characters.monomialProduct",
+        "BD.Blocks.repeatedCharpoly",
+        "BD.Blocks.repeatedDeterminant"
+      ],
+      "checked": "For an arbitrary finite collection of blocks of different dimensions, the characteristic polynomial and determinant are products with the required multiplicities. This includes multiplicity zero. Determinants are invariant under conjugation.",
+      "boundary": "Representation-theoretic decomposition of the odd permutation module and the dimension of the entry span for actual p-units."
+    },
+    {
+      "id": "6.2",
+      "title": "Relations among traces",
+      "proofs": [
+        "BD.Characters.affineTrace",
+        "BD.Blocks.repeatedTrace"
+      ],
+      "checked": "The trace of repeated heterogeneous blocks is the multiplicity-weighted sum. Given independent block traces, affine trace relations are equivalent to the linear equations on multiplicities.",
+      "boundary": "The independence and identification of the actual block traces."
+    },
+    {
+      "id": "6.3",
+      "title": "Bound on the space of pure logarithm lifts",
+      "proofs": [
+        "BD.Characters.liftDimensionBound",
+        "BD.Matrices.liftGraph"
+      ],
+      "checked": "Weighted sum of the blockwise nullity bounds and the obstruction graph.",
+      "boundary": "Maksoud’s rank theorem and identification of the nullity of the actual lifting space with the sum of the block nullities."
+    },
+    {
+      "id": "6.4",
+      "title": "Normalized Gross–Stark coefficients",
+      "proofs": [
+        "BD.Applications.grossCoefficient",
+        "BD.Applications.grossExactIffNoPureLift",
+        "BD.Series.exactOrder",
+        "BD.Characters.monomialProduct",
+        "BD.Blocks.repeatedDeterminant"
+      ],
+      "checked": "Normalized coefficient extraction, the equivalence of exact order and absence of a pure logarithm lift, and the product formula for determinants with arbitrary block sizes and multiplicities.",
+      "boundary": "Gross–Stark vanishing and the Dasgupta–Kakde–Ventullo formula for the cyclotomic Taylor series. Nonvanishing of one-dimensional arithmetic blocks."
+    },
+    {
+      "id": "6.5",
+      "title": "Higher-rank nonvanishing",
+      "proofs": [
+        "BD.Applications.grossExactIffNoPureLift",
+        "BD.Series.exactOrder"
+      ],
+      "checked": "Exact-order criterion once the expected coefficient is identified.",
+      "boundary": "Gross–Kuz’min nonvanishing and its known rank-one cases. The remark makes no new unconditional higher-rank nonvanishing assertion."
+    },
+    {
+      "id": "6.6",
+      "title": "Order-one coefficient relations",
+      "proofs": [
+        "BD.Characters.affineTrace",
+        "BD.Characters.coefficientBinomial"
+      ],
+      "checked": "Compression of affine relations after repetition of the same independent coordinate.",
+      "boundary": "Rank-one block identification, arithmetic independence, transcendence of a coefficient and of ratios of differently labelled coefficients."
+    },
+    {
+      "id": "6.7",
+      "title": "Field generated by a coefficient",
+      "proofs": [
+        "BD.Characters.stabilizerCriterion",
+        "BD.CoefficientField.fixesGenerators",
+        "BD.CoefficientField.fieldOfTrace"
+      ],
+      "checked": "The stabilizer criterion follows from injective equivariant labels. In any finite Galois extension, the equality of stabilizers implies equality of the field generated by the trace and the field generated by the character values.",
+      "boundary": "Identification of the ambient arithmetic splitting field, the equivariant labelling of the actual regulator traces, and the reduction of the coefficient to the stated trace."
+    },
+    {
+      "id": "6.8",
+      "title": "Ideal of numerical relations",
+      "proofs": [
+        "BD.Characters.coefficientBinomial",
+        "BD.GenericDet.independentDeterminants",
+        "BD.Relations.kernel_eq_fiberIdeal",
+        "BD.Relations.realized_kernel",
+        "BD.Monomials.independence",
+        "BD.Monomials.genericBlockIndependence"
+      ],
+      "checked": "Unconditional exponent binomials, algebraic independence of determinants of disjoint generic blocks of positive size, the full exponent-fiber ideal under an injective specialization, and equivalence of monomial independence with injectivity of the exponent map.",
+      "boundary": "Weak p-adic Schanuel, independence of the arithmetic regulator entries and the Laurent fraction-field transcendence-degree argument."
+    },
+    {
+      "id": "7.1",
+      "title": "Relations among cyclotomic germs",
+      "proofs": [
+        "BD.Interpolation.descendRows",
+        "BD.Interpolation.factorialDominates",
+        "BD.Tails.polynomialTail",
+        "BD.Interpolation.leadingFrequency",
+        "BD.Separation.moments_separate",
+        "BD.Artin.isolateScale",
+        "BD.Relations.realized_kernel",
+        "BD.Monomials.independence"
+      ],
+      "checked": "Descent for any family of algebraic rows, factorial dominance, bounds for a summable tail, elimination at an isolated frequency, separation of character tuples, the full fiber-binomial ideal, and the independence criterion for the formal monomials.",
+      "boundary": "The Deligne–Ribet interpolation and identity theorem for these germs, the functional equation, full construction of the scaled Dirichlet frequencies, squarefree coefficients and Chebotarev realization of the isolating samples. The transcendence-degree computation of the monomial field is outside this proof."
+    },
+    {
+      "id": "7.2",
+      "title": "Values at interpolation integers",
+      "proofs": [
+        "BD.Interpolation.factorialDominates",
+        "BD.Tails.envelope"
+      ],
+      "checked": "Growth and absolute-convergence estimates used after substituting the sample formula.",
+      "boundary": "The global Artin functional equation, gamma reflection and duplication, reciprocal Frobenius polynomial and squarefree Euler-coefficient formula."
+    },
+    {
+      "id": "7.3",
+      "title": "Information lost at zero",
+      "proofs": [
+        "BD.Linear.projectionLoss",
+        "BD.Relations.kernel_eq_fiberIdeal"
+      ],
+      "checked": "Rank difference equals kernel dimension for the linear projection; exponent-fiber identification.",
+      "boundary": "The analytic and numerical transcendence degrees on the two sides, including weak p-adic Schanuel on the numerical side."
+    },
+    {
+      "id": "7.4",
+      "title": "Odd Brauer induction and irreducible germs",
+      "proofs": [
+        "BD.Relations.brauer_clear",
+        "BD.Relations.realized_kernel",
+        "BD.Applications.grossCoefficient"
+      ],
+      "checked": "Cancellation of a common formal character and persistence of the ideal under injective realization; extraction of the expected coefficient.",
+      "boundary": "Odd Brauer induction, meromorphic p-adic Artin functions, the exact-order arithmetic hypotheses and irreducible character independence for these functions."
+    },
+    {
+      "id": "8.1",
+      "title": "The cubic at 7 and the quadratic field",
+      "proofs": [
+        "BD.Cubic.irreducible",
+        "BD.Cubic.discriminantNotSquare",
+        "BD.Cubic.threeRealRoots",
+        "BD.Cubic.factorSeven",
+        "BD.Arithmetic.cubicFactorsSeven",
+        "BD.Arithmetic.quadraticLocalData",
+        "BD.Arithmetic.quadraticNorms",
+        "BD.Permutations.charactersOfAction"
+      ],
+      "checked": "Irreducibility over the rationals, positive nonsquare discriminant, three real roots and the polynomial factorization at 7. Exact finite splitting and actual permutation character calculations.",
+      "boundary": "Galois group and Frobenius interpretations for the particular splitting field, and identification of the coefficient with a local norm logarithm."
+    },
+    {
+      "id": "8.2",
+      "title": "The next coefficient at 7",
+      "proofs": [
+        "BD.Arithmetic.delta_legendre",
+        "BD.Arithmetic.valueZero",
+        "BD.Arithmetic.valueMinusSix",
+        "BD.Arithmetic.secantSix",
+        "BD.Arithmetic.secantTwelve",
+        "BD.Arithmetic.secantFortyTwo",
+        "BD.Jet.slopeFromSample",
+        "BD.Jet.logTermValuation",
+        "BD.Jet.firstOrderFailure",
+        "BD.Examples.characterRelation",
+        "BD.Examples.quotientIdentity",
+        "BD.SpecialValues.actualFirstValue",
+        "BD.SpecialValues.actualSeventhValue",
+        "BD.Arithmetic.exactMinusTwelve",
+        "BD.Arithmetic.exactMinusFortyTwo",
+        "BD.Arithmetic.exactSecants",
+        "BD.PadicJet.integralSeriesSummable",
+        "BD.PadicJet.differenceQuotient",
+        "BD.PadicJet.reduceValue",
+        "BD.PadicJet.existsUniqueNegativeSix",
+        "BD.PadicJet.negativeSixSample"
+      ],
+      "checked": "Lean identifies the character and evaluates the first and seventh Bernoulli polynomials. It verifies all three rational secants before reduction. For an arbitrary integral p-adic power series, its series converges on pℤₚ, its difference quotient tends to the linear coefficient, and its tail after that term vanishes modulo p². At the unique 7-adic coordinate with 8⁶(1+t)=1, the two interpolation residues force the normalized first-jet slope 42 modulo 49.",
+      "boundary": "The generalized Bernoulli special-value theorem, construction and interpolation of the Deligne–Ribet series, and the analytic change of variable from the power-series coordinate to the cyclotomic parameter using the p-adic logarithm."
+    },
+    {
+      "id": "9.1",
+      "title": "Adding an abelian part",
+      "proofs": [
+        "BD.Linear.extensionDet",
+        "BD.Linear.periodProduct",
+        "BD.Euler.blockFactor",
+        "BD.Applications.ordinaryProduct",
+        "BD.Series.ellipticExceptional"
+      ],
+      "checked": "Multiplication of determinant classes and Euler factors on block extensions, plus the order and coefficients for ordinary or simple-zero formal Taylor factors.",
+      "boundary": "Mixed realization exactness for the extension, the Hasse–Weil factor and modular-symbol rationality. The elliptic exceptional-zero discussion uses the named arithmetic theorems."
+    }
+  ],
+  "additional": [
+    {
+      "id": "8a",
+      "title": "Cubic, normal and C₃ character projections",
+      "proofs": [
+        "BD.Examples.decompositions",
+        "BD.Examples.localDimensions",
+        "BD.Permutations.enumerationComplete",
+        "BD.Permutations.orderSixInduction",
+        "BD.Examples.coefficientIdentity",
+        "BD.Examples.unscaledIdentity"
+      ],
+      "checked": "The finite action, the dimension vector (1,0,1,2,3), residue-degree rescaling, and the scalar coefficient identity.",
+      "boundary": "Frobenius reciprocity for the stated number fields and the nonzero arithmetic regulators."
+    },
+    {
+      "id": "8b",
+      "title": "Field of definition at 29 and growth in towers",
+      "proofs": [
+        "BD.Arithmetic.cubicRootsTwentyNine",
+        "BD.Arithmetic.quadraticLocalData",
+        "BD.Characters.stabilizerCriterion",
+        "BD.Examples.towerOrder",
+        "BD.CoefficientField.fieldOfTrace"
+      ],
+      "checked": "Frobenius and quadratic tests modulo 29, recovery of a field from its stabilizer inside a finite Galois extension, and the combinatorial order 3·2ᵐ.",
+      "boundary": "Linear disjointness of the field towers, Dirichlet primes, p-adic character fields and nonvanishing of each arithmetic block."
+    },
+    {
+      "id": "9b",
+      "title": "Ordinary and split multiplicative elliptic factors",
+      "proofs": [
+        "BD.Applications.ordinaryUnitRoot",
+        "BD.Applications.ordinaryProduct",
+        "BD.Series.ellipticExceptional"
+      ],
+      "checked": "The unit root differs from one under the point-count identity. A simple-zero factor increases the order exactly by one with nonzero coefficients.",
+      "boundary": "Ordinary interpolation, Greenberg–Stevens for p ≥ 5, Kobayashi’s odd-prime result, and nonvanishing of the logarithm of the Tate parameter."
+    },
+    {
+      "id": "1a",
+      "title": "Conjectures and normalizations",
+      "proofs": [
+        "BD.Euler.constantFactor",
+        "BD.Series.complexLeading",
+        "BD.Matrices.branchShift"
+      ],
+      "checked": "Local trivial Frobenius factor, constant Taylor factors and logarithm branch convention in coordinates.",
+      "boundary": "Definitions of Deligne 1-motives and Scholl’s critical value conjecture. The manuscript contains the arithmetic definitions and references."
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+@BD.Applications.grossCoefficient : ∀ {I : Type u_1} {K : Type u_2} [inst : Field K] [inst_1 : Fintype I]
+  [inst_2 : DecidableEq I] (B : Matrix I I K) (F : PowerSeries K) (r : ℕ) (c : K),
+  c ≠ 0 → BD.Series.HasTerm F r (c * B.det) → (PowerSeries.coeff K r) F / c = B.det
+@BD.Applications.grossExactIffNoPureLift : ∀ {I : Type u_1} {K : Type u_2} [inst : Field K] [inst_1 : Fintype I]
+  [inst_2 : DecidableEq I] (B : Matrix I I K) (F : PowerSeries K) (r : ℕ) (c : K),
+  c ≠ 0 → BD.Series.HasTerm F r (c * B.det) → (F.order = ↑r ↔ ∀ (y : I → K), B.transpose.mulVec y = 0 → y = 0)
+@BD.Applications.ordinaryProduct : ∀ {K : Type u_1} [inst : Field K] {F E : PowerSeries K} {a e : K} {r : ℕ},
+  BD.Series.HasTerm F r a →
+    BD.Series.HasTerm E 0 e → a ≠ 0 → e ≠ 0 → (F * E).order = ↑r ∧ (PowerSeries.coeff K r) (F * E) = a * e
+@BD.Applications.ordinaryUnitRoot : ∀ {K : Type u_1} [inst : Field K] (u a p : K),
+  u ^ 2 - a * u + p = 0 → p + 1 - a ≠ 0 → u ≠ 1
+BD.Arithmetic.bernoulliCrosscheckSix : BD.Arithmetic.specialValue 6 = -10344805682225424
+BD.Arithmetic.bernoulliCrosscheckZero : BD.Arithmetic.specialValue 0 = 12
+BD.Arithmetic.characterMass : BD.Arithmetic.powerSum 0 = 0
+BD.Arithmetic.cubicDiscriminant : -4 * (-4) ^ 3 - 27 * 1 ^ 2 = 229
+BD.Arithmetic.cubicFactorsSeven : ((List.range 7).all fun n =>
+      (BD.Arithmetic.cubic ↑n - (↑n - 4) * (↑n ^ 2 + 4 * ↑n + 5)) % 7 == 0) =
+    true ∧
+  BD.Arithmetic.roots 7 BD.Arithmetic.cubic = [4] ∧ (BD.Arithmetic.roots 7 fun x => x ^ 2 + 4 * x + 5) = []
+BD.Arithmetic.cubicRootTest : BD.Arithmetic.cubic 1 = -2 ∧ BD.Arithmetic.cubic (-1) = 4
+BD.Arithmetic.cubicRootsTwentyNine : BD.Arithmetic.roots 29 BD.Arithmetic.cubic = [13]
+BD.Arithmetic.deltaAtSeven : BD.Arithmetic.delta 7 = -1
+BD.Arithmetic.delta_legendre : ∀ (a : ℕ), BD.Arithmetic.delta a = legendreSym 3 ↑a * legendreSym 229 ↑a
+BD.Arithmetic.discrBetweenSquares : 15 ^ 2 < 229 ∧ 229 < 16 ^ 2
+BD.Arithmetic.discriminantData : -3 * 229 = -687 ∧ -687 % 4 = 1
+BD.Arithmetic.exactMinusFortyTwo : BD.Arithmetic.specialValue 42 =
+  -498465604963330934325492313169818008187227792911781108007151910214379925549782983927876656259460376720284722479781354316986863813726580464
+BD.Arithmetic.exactMinusTwelve : BD.Arithmetic.specialValue 12 = 11669195118821150724043145141695584
+BD.Arithmetic.exactSecants : BD.Arithmetic.secant 6 = 16903699840469737967 / 2 ∧
+  BD.Arithmetic.secant 12 = -2243287236885834206161269702021938380543277 / 4 ∧
+    BD.Arithmetic.secant 42 =
+      308547719403732974500506967411170520933012257182789390877683367390331843173849073762049259507771306277990914367625944122387793641775061655056327598908065597111824075011681 /
+        2
+BD.Arithmetic.interpolatedResidues : 2 * 12 = 24 ∧ (1 + 7 ^ 6) * -10344805682225424 % 49 = 3
+BD.Arithmetic.quadraticLocalData : (BD.Arithmetic.roots 7 fun x => x ^ 2 + 3) = [2, 5] ∧
+  (BD.Arithmetic.roots 29 fun x => x ^ 2 + 1) = [12, 17] ∧
+    (BD.Arithmetic.roots 29 fun x => x ^ 2 - 229) = [] ∧ (BD.Arithmetic.roots 29 fun x => x ^ 2 + x + 1) = []
+BD.Arithmetic.quadraticNorms : 4 ^ 2 - 5 = 11 ∧ 5 ^ 2 + 3 = 4 * 7
+BD.Arithmetic.secantFortyTwo : BD.Arithmetic.slopeResidue 42 = true
+BD.Arithmetic.secantSix : BD.Arithmetic.slopeResidue 6 = true
+BD.Arithmetic.secantTwelve : BD.Arithmetic.slopeResidue 12 = true
+BD.Arithmetic.signAt_eq_legendre : ∀ (p a : ℕ) [inst : Fact (Nat.Prime p)] [inst_1 : Fact (2 < p)],
+  p % 2 = 1 → BD.Arithmetic.signAt p a = legendreSym p ↑a
+BD.Arithmetic.signTable229 : ((List.range 229).all fun a =>
+    BD.Arithmetic.signAt 229 a == BD.Arithmetic.squareSign 229 a) =
+  true
+BD.Arithmetic.signTableThree : ((List.range 3).all fun a => BD.Arithmetic.signAt 3 a == BD.Arithmetic.squareSign 3 a) =
+  true
+BD.Arithmetic.splitAtEleven : (BD.Arithmetic.roots 11 fun x => x ^ 2 - 5) = [4, 7]
+BD.Arithmetic.sumOne : BD.Arithmetic.powerSum 1 = -8244
+BD.Arithmetic.uniqueSlopes : List.filter (fun n => (24 + -6 * ↑n) % 49 == 3) (List.range 49) = [28] ∧
+  List.filter (fun n => 24 * n % 49 == 28) (List.range 49) = [42]
+BD.Arithmetic.valueMinusSix : -BD.Arithmetic.bernoulliSevenNumerator = 42 * 687 * -10344805682225424
+BD.Arithmetic.valueZero : -BD.Arithmetic.powerSum 1 = 687 * 12
+@BD.Artin.isolateScale : ∀ {K : Type u_1} {I : Type u_2} {C : Type u_3} [inst : NormedField K] [inst_1 : Fintype I]
+  (x : I → C → K),
+  Function.Injective x →
+    ∀ (w : I → K),
+      (∀ (i : I), w i ≠ 0) →
+        ∀ (P : I → Polynomial K),
+          (∀ (d : C →₀ ℕ),
+              ∃ z tail,
+                (∀ᶠ (n : ℕ) in Filter.atTop, z n ≠ 0) ∧
+                  Filter.Tendsto (fun n => (z n)⁻¹) Filter.atTop (nhds 0) ∧
+                    Filter.Tendsto tail Filter.atTop (nhds 0) ∧
+                      ∀ᶠ (n : ℕ) in Filter.atTop,
+                        ∑ i, (w i * d.prod fun c e => x i c ^ e) * Polynomial.eval (z n) (P i) + tail n = 0) →
+            ∀ (i : I), P i = 0
+@BD.Blocks.characteristicSum : ∀ {J : Type u_1} {K : Type u_2} [inst : Fintype J] [inst_1 : LinearOrder J]
+  [inst_2 : CommRing K] {N : J → Type u_3} [inst_3 : (j : J) → Fintype (N j)] [inst_4 : (j : J) → DecidableEq (N j)]
+  (M : (j : J) → Matrix (N j) (N j) K), (Matrix.blockDiagonal' M).charpoly = ∏ j, (M j).charpoly
+@BD.Blocks.determinantSum : ∀ {J : Type u_1} {K : Type u_2} [inst : Fintype J] [inst_1 : LinearOrder J]
+  [inst_2 : CommRing K] {N : J → Type u_3} [inst_3 : (j : J) → Fintype (N j)] [inst_4 : (j : J) → DecidableEq (N j)]
+  (M : (j : J) → Matrix (N j) (N j) K), (Matrix.blockDiagonal' M).det = ∏ j, (M j).det
+@BD.Blocks.repeatedCharpoly : ∀ {J : Type u_1} {K : Type u_2} [inst : Fintype J] [inst_1 : LinearOrder J]
+  [inst_2 : CommRing K] {N : J → Type u_3} [inst_3 : (j : J) → Fintype (N j)] [inst_4 : (j : J) → DecidableEq (N j)]
+  (m : J → ℕ) (M : (j : J) → Matrix (N j) (N j) K),
+  (Matrix.blockDiagonal' fun j => Matrix.blockDiagonal fun x => M j).charpoly = ∏ j, (M j).charpoly ^ m j
+@BD.Blocks.repeatedDeterminant : ∀ {J : Type u_1} {K : Type u_2} [inst : Fintype J] [inst_1 : LinearOrder J]
+  [inst_2 : CommRing K] {N : J → Type u_3} [inst_3 : (j : J) → Fintype (N j)] [inst_4 : (j : J) → DecidableEq (N j)]
+  (m : J → ℕ) (M : (j : J) → Matrix (N j) (N j) K),
+  (Matrix.blockDiagonal' fun j => Matrix.blockDiagonal fun x => M j).det = ∏ j, (M j).det ^ m j
+@BD.Blocks.repeatedTrace : ∀ {J : Type u_1} {K : Type u_2} [inst : Fintype J] [inst_1 : LinearOrder J]
+  [inst_2 : CommRing K] {N : J → Type u_3} [inst_3 : (j : J) → Fintype (N j)] (m : J → ℕ)
+  (M : (j : J) → Matrix (N j) (N j) K),
+  (Matrix.blockDiagonal' fun j => Matrix.blockDiagonal fun x => M j).trace = ∑ j, m j • (M j).trace
+@BD.Blocks.singleSizeCharpoly : ∀ {K : Type u_1} [inst : CommRing K] {T : Type u_2} {W : Type u_3} [inst_1 : Fintype T]
+  [inst_2 : DecidableEq T] [inst_3 : Fintype W] [inst_4 : DecidableEq W] (A : T → Matrix W W K),
+  (Matrix.blockDiagonal A).charpoly = ∏ t, (A t).charpoly
+@BD.Characters.affineTrace : ∀ {I : Type u_1} {J : Type u_2} {K : Type u_3} {E : Type u_4} [inst : Fintype I]
+  [inst_1 : Fintype J] [inst_2 : Field K] [inst_3 : Field E] [inst_4 : Algebra K E] (v : J → E),
+  (∀ (b : K) (x : J → K), (algebraMap K E) b + ∑ j, (algebraMap K E) (x j) * v j = 0 ↔ b = 0 ∧ ∀ (j : J), x j = 0) →
+    ∀ (m : I → J → K) (b : K) (a : I → K),
+      (algebraMap K E) b + ∑ i, (algebraMap K E) (a i) * ∑ j, (algebraMap K E) (m i j) * v j = 0 ↔
+        b = 0 ∧ ∀ (j : J), ∑ i, a i * m i j = 0
+@BD.Characters.coefficientBinomial : ∀ {I : Type u_1} {J : Type u_2} {K : Type u_3} [inst : Fintype I]
+  [inst_1 : Fintype J] [inst_2 : CommMonoid K] (d : J → K) (m : I → J → ℕ) (a b : I → ℕ),
+  (∀ (j : J), ∑ i, m i j * a i = ∑ i, m i j * b i) → ∏ i, (∏ j, d j ^ m i j) ^ a i = ∏ i, (∏ j, d j ^ m i j) ^ b i
+@BD.Characters.liftDimensionBound : ∀ {I : Type u_1} [inst : Fintype I] (m d k : I → ℕ),
+  (∀ (i : I), k i ≤ d i / 2) → ∑ i, m i * k i ≤ ∑ i, m i * (d i / 2)
+@BD.Characters.monomialProduct : ∀ {I : Type u_1} {J : Type u_2} {K : Type u_3} [inst : Fintype I] [inst_1 : Fintype J]
+  [inst_2 : CommMonoid K] (d : J → K) (m : I → J → ℕ) (a : I → ℕ),
+  ∏ i, (∏ j, d j ^ m i j) ^ a i = ∏ j, d j ^ ∑ i, m i j * a i
+@BD.Characters.quadraticIndependence : ∀ {K : Type u_1} [inst : Field K] (v l : K),
+  v ≠ 0 → l ≠ 0 → ∀ (m n : K), m * v = 0 → (m = 0 → n * l = 0) → m = 0 ∧ n = 0
+@BD.Characters.stabilizerCriterion : ∀ {I : Type u_1} {G : Type u_2} {T : Type u_3} (σ : G → I → I) (τ : G → T → T)
+  (v : I → T),
+  Function.Injective v → (∀ (g : G) (i : I), τ g (v i) = v (σ g i)) → ∀ (g : G) (i : I), τ g (v i) = v i ↔ σ g i = i
+@BD.CoefficientField.fieldOfTrace : ∀ {K : Type u_1} {E : Type u_2} [inst : Field K] [inst_1 : Field E]
+  [inst_2 : Algebra K E] [inst_3 : FiniteDimensional K E] [inst_4 : IsGalois K E] {C : Type u_3} (trace : E)
+  (χ : C → E),
+  (∀ (σ : E ≃ₐ[K] E), σ trace = trace ↔ ∀ (c : C), σ (χ c) = χ c) → K⟮trace⟯ = IntermediateField.adjoin K (Set.range χ)
+@BD.CoefficientField.fixesGenerators : ∀ {K : Type u_1} {E : Type u_2} [inst : Field K] [inst_1 : Field E]
+  [inst_2 : Algebra K E] (S : Set E) (σ : E ≃ₐ[K] E),
+  σ ∈ (IntermediateField.adjoin K S).fixingSubgroup ↔ ∀ x ∈ S, σ x = x
+BD.Cubic.discriminantNotSquare : ¬IsSquare 229
+BD.Cubic.factorSeven : BD.Cubic.polynomial (ZMod 7) =
+  (Polynomial.X - Polynomial.C 4) * (Polynomial.X ^ 2 + Polynomial.C 4 * Polynomial.X + Polynomial.C 5)
+BD.Cubic.irreducible : Irreducible (BD.Cubic.polynomial ℚ)
+BD.Cubic.noRationalRoot : ∀ (q : ℚ), ¬(BD.Cubic.polynomial ℚ).IsRoot q
+BD.Cubic.threeRealRoots : (∃ x ∈ Set.Ioo (-3) (-2), (BD.Cubic.polynomial ℝ).IsRoot x) ∧
+  (∃ x ∈ Set.Ioo 0 1, (BD.Cubic.polynomial ℝ).IsRoot x) ∧ ∃ x ∈ Set.Ioo 1 2, (BD.Cubic.polynomial ℝ).IsRoot x
+@BD.Euler.blockFactor : ∀ {K : Type u_1} {m : Type u_2} {n : Type u_3} [inst : CommRing K] [inst_1 : Fintype m]
+  [inst_2 : Fintype n] [inst_3 : DecidableEq m] [inst_4 : DecidableEq n] (A : Matrix m m K) (B : Matrix m n K)
+  (D : Matrix n n K) (t : K), BD.Euler.factor (Matrix.fromBlocks A B 0 D) t = BD.Euler.factor A t * BD.Euler.factor D t
+@BD.Euler.constantFactor : ∀ {K : Type u_1} {n : Type u_2} [inst : CommRing K] [inst_1 : Fintype n]
+  [inst_2 : DecidableEq n] (t : K), BD.Euler.factor 1 t = (1 - t) ^ Fintype.card n
+@BD.Euler.correction : ∀ {K : Type u_1} [inst : CommRing K] {K₀ G Y M D : K}, M = G * K₀ → Y = K₀ * D → M * D = G * Y
+@BD.Euler.inertSignFactor : ∀ {K : Type u_1} [inst : CommRing K] (t : K),
+  BD.Euler.factor (Matrix.diagonal fun x => -1) t = 1 + t
+BD.Examples.characterRelation : ∀ (c : BD.Examples.Class),
+  BD.Examples.regular c + BD.Examples.trivial c = 2 * BD.Examples.permThree c + BD.Examples.sign c
+@BD.Examples.coefficientIdentity : ∀ {K : Type u_1} [inst : CommRing K] (a b : K), a * b ^ 2 * a = (a * b) ^ 2
+BD.Examples.decompositions : ∀ (c : BD.Examples.Class),
+  BD.Examples.permThree c = BD.Examples.trivial c + BD.Examples.standard c ∧
+    BD.Examples.regular c = BD.Examples.trivial c + BD.Examples.sign c + 2 * BD.Examples.standard c
+BD.Examples.derivativeNormalization : ∀ (d e : ZMod 49), 3 = 24 + -6 * d → d = 24 * e → d = 28 ∧ e = 42
+BD.Examples.eightPow : ∀ (n : ℕ), 8 ^ n = 1 + 7 * ↑n
+BD.Examples.localDimensions : [BD.Examples.fixedDim BD.Examples.trivial, BD.Examples.fixedDim BD.Examples.sign,
+    BD.Examples.fixedDim BD.Examples.standard, BD.Examples.fixedDim BD.Examples.permThree,
+    BD.Examples.fixedDim BD.Examples.regular] =
+  [1, 0, 1, 2, 3]
+@BD.Examples.quotientIdentity : ∀ {K : Type u_1} [inst : Field K] {l a c d : K},
+  l * a = c ^ 2 * d → c ≠ 0 → l * a / c ^ 2 = d
+BD.Examples.sevenSquare : ∀ (s : ZMod 49), (7 * s) ^ 2 = 0
+BD.Examples.sevenTangent : ∀ (a b s : ZMod 49) (tail : List (ZMod 49)),
+  BD.Examples.horner (7 * s) (a :: b :: tail) = a + s * (7 * b)
+@BD.Examples.squareZeroExpansion : ∀ {R : Type u_1} [inst : CommRing R] (z a b : R) (rest : List R),
+  z ^ 2 = 0 → BD.Examples.horner z (a :: b :: rest) = a + z * b
+BD.Examples.towerOrder : ∀ (m : ℕ), ∑ _i, (1 + 2) = 3 * 2 ^ m
+@BD.Examples.unscaledIdentity : ∀ {K : Type u_1} [inst : CommRing K] (a b : K),
+  2 ^ 3 * (a * b ^ 2) * a = 2 * (2 * (a * b)) ^ 2
+@BD.GenericDet.independentDeterminants : ∀ {J : Type u_1} {K : Type u_2} [inst : CommRing K] (d : J → ℕ),
+  Function.Injective ⇑(BD.GenericDet.detMap d)
+@BD.GenericDet.leftInverse : ∀ {J : Type u_1} {K : Type u_2} [inst : CommRing K] (d : J → ℕ),
+  (BD.GenericDet.specialize d).comp (BD.GenericDet.detMap d) = AlgHom.id K (MvPolynomial J K)
+@BD.GenericDet.specializeBlock : ∀ {J : Type u_1} {K : Type u_2} [inst : CommRing K] (d : J → ℕ) (j : J),
+  (BD.GenericDet.specialize d) (BD.GenericDet.block d j).det = MvPolynomial.X j
+@BD.Interpolation.descendRows : ∀ {K : Type u_1} {E : Type u_2} {I : Type u_3} {S : Type u_4} [inst : Field K]
+  [inst_1 : AddCommGroup E] [inst_2 : Module K E] [inst_3 : Fintype I] (row : S → I → K) (c : I → E),
+  c ≠ 0 → (∀ (s : S), ∑ i, row s i • c i = 0) → ∃ b, b ≠ 0 ∧ ∀ (s : S), ∑ i, row s i * b i = 0
+@BD.Interpolation.escapingPolynomial : ∀ {K : Type u_1} [inst : NormedField K] (z : ℕ → K),
+  (∀ᶠ (n : ℕ) in Filter.atTop, z n ≠ 0) →
+    Filter.Tendsto (fun n => (z n)⁻¹) Filter.atTop (nhds 0) →
+      ∀ (P : Polynomial K), Filter.Tendsto (fun n => Polynomial.eval (z n) P) Filter.atTop (nhds 0) → P = 0
+BD.Interpolation.factorialDominates : ∀ (c : ℝ) (k : ℕ → ℕ),
+  Filter.Tendsto k Filter.atTop Filter.atTop →
+    Filter.Tendsto (fun j => c ^ k j / ↑(k j).factorial) Filter.atTop (nhds 0)
+@BD.Interpolation.leadingFrequency : ∀ {K : Type u_1} [inst : NormedField K] (z tail : ℕ → K),
+  (∀ᶠ (n : ℕ) in Filter.atTop, z n ≠ 0) →
+    Filter.Tendsto (fun n => (z n)⁻¹) Filter.atTop (nhds 0) →
+      ∀ (P : Polynomial K),
+        Filter.Tendsto tail Filter.atTop (nhds 0) →
+          (∀ᶠ (n : ℕ) in Filter.atTop, Polynomial.eval (z n) P + tail n = 0) → P = 0
+@BD.Jet.firstCoeffMul : ∀ {R : Type u_1} [inst : CommRing R] (f g : PowerSeries R),
+  (PowerSeries.coeff R 1) (f * g) =
+    (PowerSeries.constantCoeff R) f * (PowerSeries.coeff R 1) g +
+      (PowerSeries.coeff R 1) f * (PowerSeries.constantCoeff R) g
+@BD.Jet.firstOrderFailure : ∀ {K : Type u_1} [inst : Field K] (L V H : PowerSeries K),
+  L = V * H →
+    (PowerSeries.constantCoeff K) H = 1 →
+      (PowerSeries.constantCoeff K) V ≠ 0 →
+        (PowerSeries.coeff K 1) H ≠ 0 →
+          (PowerSeries.constantCoeff K) L = (PowerSeries.constantCoeff K) V ∧
+            (PowerSeries.coeff K 1) L ≠ (PowerSeries.coeff K 1) V
+@BD.Jet.hiddenDerivative : ∀ {K : Type u_1} [inst : Field K] (L V H : PowerSeries K),
+  L = V * H →
+    (PowerSeries.constantCoeff K) H = 1 →
+      (PowerSeries.coeff K 1) L - (PowerSeries.coeff K 1) V =
+        (PowerSeries.constantCoeff K) V * (PowerSeries.coeff K 1) H
+BD.Jet.integralIwasawaSlope : ∀ (H : PowerSeries (ZMod 49)) (s : ZMod 49),
+  (BD.Jet.firstJet (7 * s) ⋯) H = (PowerSeries.constantCoeff (ZMod 49)) H + s * (7 * (PowerSeries.coeff (ZMod 49) 1) H)
+BD.Jet.logTermValuation : ∀ (n e : ℕ), 2 ≤ n → 7 ^ e ∣ n → e + 2 ≤ n
+BD.Jet.slopeFromSample : ∀ (H : PowerSeries (ZMod 49)),
+  (PowerSeries.constantCoeff (ZMod 49)) H = 24 →
+    (BD.Jet.firstJet (7 * -6) ⋯) H = 3 →
+      7 * (PowerSeries.coeff (ZMod 49) 1) H = 28 ∧ 7 * (PowerSeries.coeff (ZMod 49) 1) H * 47 = 42
+@BD.Linear.criticalProjection : ∀ {K : Type u_1} {U : Type u_2} {D : Type u_3} {V : Type u_4} [inst : Field K]
+  [inst_1 : AddCommGroup U] [inst_2 : Module K U] [inst_3 : AddCommGroup D] [inst_4 : Module K D]
+  [inst_5 : AddCommGroup V] [inst_6 : Module K V] [inst_7 : FiniteDimensional K D] [inst_8 : FiniteDimensional K V]
+  (v : U →ₗ[K] D) (p : D →ₗ[K] V),
+  Function.Surjective ⇑(p ∘ₗ v) →
+    Module.finrank K V ≤ Module.finrank K D ∧
+      (Module.finrank K D = Module.finrank K V → LinearMap.ker (p ∘ₗ v) = LinearMap.ker v)
+@BD.Linear.extensionCharpoly : ∀ {m : Type u_1} {n : Type u_2} {R : Type u_3} [inst : Fintype m] [inst_1 : Fintype n]
+  [inst_2 : DecidableEq m] [inst_3 : DecidableEq n] [inst_4 : CommRing R] (A : Matrix m m R) (B : Matrix m n R)
+  (D : Matrix n n R), (Matrix.fromBlocks A B 0 D).charpoly = A.charpoly * D.charpoly
+@BD.Linear.extensionDet : ∀ {m : Type u_1} {n : Type u_2} {R : Type u_3} [inst : Fintype m] [inst_1 : Fintype n]
+  [inst_2 : DecidableEq m] [inst_3 : DecidableEq n] [inst_4 : CommRing R] (A : Matrix m m R) (B : Matrix m n R)
+  (D : Matrix n n R), (Matrix.fromBlocks A B 0 D).det = A.det * D.det
+@BD.Linear.periodProduct : ∀ {E : Type u_1} [inst : Field E] [inst_1 : Algebra ℚ E] {x y u v : E},
+  BD.Linear.SamePeriod x y → BD.Linear.SamePeriod u v → BD.Linear.SamePeriod (x * u) (y * v)
+@BD.Linear.projectionLoss : ∀ {K : Type u_1} {U : Type u_2} {D : Type u_3} [inst : Field K] [inst_1 : AddCommGroup U]
+  [inst_2 : Module K U] [inst_3 : AddCommGroup D] [inst_4 : Module K D] [inst_5 : FiniteDimensional K U]
+  (p : U →ₗ[K] D), Module.finrank K U - Module.finrank K ↥(LinearMap.range p) = Module.finrank K ↥(LinearMap.ker p)
+@BD.Linear.relativeLift : ∀ {K : Type u_1} {U : Type u_2} {D : Type u_3} {V : Type u_4} {W : Type u_5} [inst : Field K]
+  [inst_1 : AddCommGroup U] [inst_2 : Module K U] [inst_3 : AddCommGroup D] [inst_4 : Module K D]
+  [inst_5 : AddCommGroup V] [inst_6 : Module K V] [inst_7 : AddCommGroup W] [inst_8 : Module K W] (v : U →ₗ[K] D)
+  (N : U →ₗ[K] V) (dN : D →ₗ[K] W) (v₀ : V →ₗ[K] W) (i : V →ₗ[K] U),
+  Function.Surjective ⇑v →
+    (∀ (u : U), v₀ (N u) = dN (v u)) →
+      (∀ (z : V), N (i z) = z) → (∀ (z : V), v₀ z = 0 → v (i z) = 0) → ∀ (d : D), dN d = 0 → ∃ u, N u = 0 ∧ v u = d
+@BD.Linear.residueQuotient : ∀ {E : Type u_1} [inst : Field E] (e f a b x y : E),
+  e ≠ 0 → f ≠ 0 → b ≠ 0 → y ≠ 0 → e * a * x / (f * b * y) * (f / e) = a / b * (x / y)
+@BD.Matrices.branchShift : ∀ {n : Type u_1} {R : Type u_2} [inst : Fintype n] [inst_1 : DecidableEq n]
+  [inst_2 : CommRing R] (L O W : Matrix n n R), O * W = 1 → ∀ (c : R), (L - c • O) * W = L * W - c • 1
+@BD.Matrices.descentConjugacy : ∀ {n : Type u_1} {R : Type u_2} [inst : Fintype n] [inst_1 : DecidableEq n]
+  [inst_2 : CommRing R] (S W B : Matrix n n R), W * S = 1 → S * B * W * S = S * B
+@BD.Matrices.determinantConjugacy : ∀ {n : Type u_1} {R : Type u_2} [inst : Fintype n] [inst_1 : DecidableEq n]
+  [inst_2 : CommRing R] (S W B : Matrix n n R), S * W = 1 → (S * B * W).det = B.det
+@BD.Matrices.existsLift_iff_det : ∀ {n : Type u_1} [inst : Fintype n] [inst_1 : DecidableEq n] {K : Type u_2}
+  [inst_2 : Field K] (B : Matrix n n K) (t : n → K),
+  (∃ y, y ≠ 0 ∧ (Matrix.diagonal t - B.transpose).mulVec y = 0) ↔ (Matrix.diagonal t - B).det = 0
+@BD.Matrices.liftGraph : ∀ {n : Type u_1} {R : Type u_2} [inst : Fintype n] [inst_1 : DecidableEq n]
+  [inst_2 : CommRing R] (V W L B : Matrix n n R),
+  V * W = 1 → L = B * V → ∀ (x y : n → R), BD.Matrices.obstruction V L x y = 0 ↔ x = -B.transpose.mulVec y
+@BD.Matrices.normalizeValuations : ∀ {n : Type u_1} {R : Type u_2} [inst : Fintype n] [inst_1 : DecidableEq n]
+  [inst_2 : CommRing R] (D Dinv O W L : Matrix n n R), W * O = 1 → Dinv * D = 1 → L * W * Dinv * (D * O) = L
+@BD.Matrices.principalMinorExpansion : ∀ {n : Type u_1} {R : Type u_2} [inst : Fintype n] [inst_1 : DecidableEq n]
+  [inst_2 : CommRing R] (t : n → R) (B : Matrix n n R),
+  (Matrix.diagonal t - B).det = ∑ s, (-1) ^ s.card * BD.Matrices.minor B s * ∏ i, t ↑i
+@BD.Monomials.genericBlockIndependence : ∀ {K : Type u_1} {J : Type u_2} [inst : CommRing K] (d : J → ℕ),
+  AlgebraicIndependent K fun j => (BD.GenericDet.block d j).det
+@BD.Monomials.independence : ∀ {K : Type u_1} {I : Type u_2} {J : Type u_3} [inst : CommRing K] [inst_1 : Nontrivial K]
+  (w : (I →₀ ℕ) →+ J →₀ ℕ), AlgebraicIndependent K (BD.Monomials.imageVar w) ↔ Function.Injective ⇑w
+@BD.Monomials.injectiveExponentCriterion : ∀ {K : Type u_1} [inst : CommRing K] [inst_1 : Nontrivial K] {A : Type u_2}
+  {B : Type u_3} [inst_2 : AddCommMonoid A] [inst_3 : AddCommMonoid B] (w : A →+ B),
+  Function.Injective ⇑(AddMonoidAlgebra.mapDomainRingHom K w) ↔ Function.Injective ⇑w
+@BD.PadicJet.differenceQuotient : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (a : ℕ → ℤ_[p]),
+  Filter.Tendsto (fun t => ↑(BD.PadicJet.value a t - a 0) / ↑t) (nhdsWithin 0 {0}ᶜ) (nhds ↑(a 1))
+BD.PadicJet.existsUniqueNegativeSix : ∃! t, 8 ^ 6 * (1 + t) = 1
+@BD.PadicJet.integralSeriesSummable : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (a : ℕ → ℤ_[p]) {t : ℤ_[p]},
+  ↑p ∣ t → Summable fun n => a n * t ^ n
+BD.PadicJet.negativeSixSample : ∀ (a : ℕ → ℤ_[7]) (t : ℤ_[7]),
+  8 ^ 6 * (1 + t) = 1 →
+    (PadicInt.toZModPow 2) (a 0) = 24 →
+      (PadicInt.toZModPow 2) (BD.PadicJet.value a t) = 3 →
+        7 * (PadicInt.toZModPow 2) (a 1) = 28 ∧ 7 * (PadicInt.toZModPow 2) (a 1) * 47 = 42
+@BD.PadicJet.reduceValue : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (a : ℕ → ℤ_[p]) {t : ℤ_[p]},
+  ↑p ∣ t →
+    (PadicInt.toZModPow 2) (BD.PadicJet.value a t) =
+      (PadicInt.toZModPow 2) (a 0) + (PadicInt.toZModPow 2) (a 1) * (PadicInt.toZModPow 2) t
+@BD.PadicJet.splitValue : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (a : ℕ → ℤ_[p]) {t : ℤ_[p]},
+  ↑p ∣ t → BD.PadicJet.value a t = a 0 + a 1 * t + t ^ 2 * BD.PadicJet.value (fun n => a (n + 2)) t
+BD.Permutations.charactersOfAction : ∀ (g : BD.Permutations.Perm),
+  ↑(BD.Permutations.fixedLetters g) = BD.Examples.permThree (BD.Permutations.cls g) ∧
+    (-1) ^ BD.Permutations.inversions g = BD.Examples.sign (BD.Permutations.cls g)
+BD.Permutations.enumerationComplete : ∀ (f : BD.Permutations.Letter → BD.Permutations.Letter),
+  Function.Injective f → ∃ g, BD.Permutations.act g = f
+BD.Permutations.enumerationUnique : Function.Injective BD.Permutations.images
+@BD.Permutations.orderSixInduction : ∀ {K : Type u_1} [inst : Field K] (ω : K), ω ^ 2 + ω + 1 = 0 → ω + ω ^ 2 = -1
+BD.Permutations.permutationsInjective : ∀ (g : BD.Permutations.Perm), Function.Injective (BD.Permutations.act g)
+@BD.Realizations.affineEvaluation : ∀ {K : Type u_1} {U : Type u_2} [inst : Field K] [inst_1 : AddCommGroup U]
+  [inst_2 : Module K U] {E : Type u_3} [inst_3 : Field E] [inst_4 : Algebra K E] (L : U →ₗ[K] E),
+  Function.Injective ⇑L →
+    (∀ (b : K) (u : U), (algebraMap K E) b = L u → b = 0) →
+      ∀ (b : K) (u : U), (algebraMap K E) b + L u = 0 ↔ b = 0 ∧ u = 0
+@BD.Realizations.inertiaKernel : ∀ {K : Type u_1} {U : Type u_2} {D : Type u_3} {W : Type u_4} [inst : Field K]
+  [inst_1 : AddCommGroup U] [inst_2 : Module K U] [inst_3 : AddCommGroup D] [inst_4 : Module K D]
+  [inst_5 : AddCommGroup W] [inst_6 : Module K W] (v : U →ₗ[K] D) (tame : D →ₗ[K] W),
+  Function.Injective ⇑tame → LinearMap.ker (tame ∘ₗ v) = LinearMap.ker v
+@BD.Realizations.normRatio : ∀ {x : ℚ} (a b : ℚ), a ≠ 0 → b ≠ 0 → x = a / b → x * (b / a) = 1
+@BD.Realizations.oddLogKernel : ∀ {K : Type u_1} {U : Type u_2} {D : Type u_3} [inst : Field K]
+  [inst_1 : AddCommGroup U] [inst_2 : Module K U] [inst_3 : AddCommGroup D] [inst_4 : Module K D] [inst_5 : CharZero K]
+  (j : U →ₗ[K] U) (l : U →ₗ[K] D), (∀ (x : U), l x = 0 → j x = x) → ∀ (x : U), j x = -x → l x = 0 → x = 0
+@BD.Realizations.splitRange : ∀ {K : Type u_1} {U : Type u_2} {D : Type u_3} {W : Type u_4} [inst : Field K]
+  [inst_1 : AddCommGroup U] [inst_2 : Module K U] [inst_3 : AddCommGroup D] [inst_4 : Module K D]
+  [inst_5 : AddCommGroup W] [inst_6 : Module K W] (t : U →ₗ[K] D) (a : W ≃ₗ[K] W) (d : D) (w : W),
+  (∃ x, (t x.1, a x.2) = (d, w)) ↔ d ∈ LinearMap.range t
+@BD.Relations.binomial_mem : ∀ {k : Type u_1} {A : Type u_2} {B : Type u_3} [inst : CommRing k]
+  [inst_1 : AddCommMonoid A] [inst_2 : AddCommMonoid B] (w : A →+ B) {a b : A},
+  w a = w b → Finsupp.single a 1 - Finsupp.single b 1 ∈ BD.Relations.fiberIdeal w
+@BD.Relations.brauer_clear : ∀ {C : Type u_1} [inst : AddCancelCommMonoid C] (u v common : C),
+  u + common = v + common ↔ u = v
+@BD.Relations.kernel_eq_fiberIdeal : ∀ {k : Type u_1} {A : Type u_2} {B : Type u_3} [inst : CommRing k]
+  [inst_1 : AddCommMonoid A] [inst_2 : AddCommMonoid B] (w : A →+ B),
+  RingHom.ker (AddMonoidAlgebra.mapDomainRingHom k w) = BD.Relations.fiberIdeal w
+@BD.Relations.realized_kernel : ∀ {k : Type u_1} {A : Type u_2} {B : Type u_3} [inst : CommRing k]
+  [inst_1 : AddCommMonoid A] [inst_2 : AddCommMonoid B] {S : Type u_4} [inst_3 : CommRing S] (w : A →+ B)
+  (ev : AddMonoidAlgebra k B →+* S),
+  Function.Injective ⇑ev → RingHom.ker (ev.comp (AddMonoidAlgebra.mapDomainRingHom k w)) = BD.Relations.fiberIdeal w
+@BD.Separation.moments_separate : ∀ {K : Type u_1} {I : Type u_2} {C : Type u_3} [inst : Field K] [inst_1 : Fintype I]
+  (x : I → C → K),
+  Function.Injective x →
+    ∀ (a : I → K), (∀ (d : C →₀ ℕ), (∑ i, a i * d.prod fun c n => x i c ^ n) = 0) → ∀ (i : I), a i = 0
+@BD.Separation.separator : ∀ {K : Type u_1} {I : Type u_2} {C : Type u_3} [inst : Field K] [inst_1 : Fintype I]
+  (x : I → C → K),
+  Function.Injective x →
+    ∀ (i : I), ∃ P, (MvPolynomial.eval (x i)) P = 1 ∧ ∀ (j : I), j ≠ i → (MvPolynomial.eval (x j)) P = 0
+@BD.Separation.weighted_moments : ∀ {K : Type u_1} {I : Type u_2} {C : Type u_3} [inst : Field K] [inst_1 : Fintype I]
+  (x : I → C → K),
+  Function.Injective x →
+    ∀ (a w : I → K),
+      (∀ (i : I), w i ≠ 0) → (∀ (d : C →₀ ℕ), (∑ i, w i * a i * d.prod fun c n => x i c ^ n) = 0) → ∀ (i : I), a i = 0
+@BD.Series.complexLeading : ∀ {K : Type u_1} [inst : Field K] (L Z : PowerSeries K) (b : ℕ) (a z : K),
+  BD.Series.HasTerm L 0 a →
+    BD.Series.HasTerm Z 0 z →
+      ∀ {F : PowerSeries K} {r : ℕ} {c : K},
+        BD.Series.HasTerm F r c → BD.Series.HasTerm (Z ^ b * L * F) r (z ^ b * a * c)
+@BD.Series.ellipticExceptional : ∀ {K : Type u_1} [inst : Field K] {F E : PowerSeries K} {r : ℕ} {a e : K},
+  BD.Series.HasTerm F r a →
+    BD.Series.HasTerm E 1 e → a ≠ 0 → e ≠ 0 → (F * E).order = ↑(r + 1) ∧ (PowerSeries.coeff K (r + 1)) (F * E) = a * e
+@BD.Series.exactOrder : ∀ {K : Type u_1} [inst : Field K] {F : PowerSeries K} {r : ℕ} {a : K},
+  BD.Series.HasTerm F r a → (F.order = ↑r ↔ a ≠ 0)
+@BD.Series.finiteProduct : ∀ {K : Type u_1} [inst : Field K] {I : Type u_2} (s : Finset I) (F : I → PowerSeries K)
+  (r : I → ℕ) (a : I → K),
+  (∀ i ∈ s, BD.Series.HasTerm (F i) (r i) (a i)) → BD.Series.HasTerm (∏ i ∈ s, F i) (∑ i ∈ s, r i) (∏ i ∈ s, a i)
+@BD.Series.power : ∀ {K : Type u_1} [inst : Field K] {F : PowerSeries K} {r : ℕ} {a : K},
+  BD.Series.HasTerm F r a → ∀ (n : ℕ), BD.Series.HasTerm (F ^ n) (r * n) (a ^ n)
+@BD.Series.product : ∀ {K : Type u_1} [inst : Field K] {F G : PowerSeries K} {r s : ℕ} {a b : K},
+  BD.Series.HasTerm F r a → BD.Series.HasTerm G s b → BD.Series.HasTerm (F * G) (r + s) (a * b)
+@BD.Series.splitCancellation : ∀ {K : Type u_1} [inst : Field K] (F U : PowerSeries K) {r t : ℕ},
+  t ≤ r → PowerSeries.X ^ t * F = PowerSeries.X ^ r * U → BD.Series.HasTerm F (r - t) ((PowerSeries.constantCoeff K) U)
+@BD.Series.term_coeff : ∀ {K : Type u_1} [inst : Field K] {F : PowerSeries K} {r : ℕ} {a : K},
+  BD.Series.HasTerm F r a → (PowerSeries.coeff K r) F = a ∧ ∀ j < r, (PowerSeries.coeff K j) F = 0
+BD.SpecialValues.actualFirstValue : BD.SpecialValues.bernoulliValue 1 = 12
+BD.SpecialValues.actualSeventhValue : BD.SpecialValues.bernoulliValue 7 = -10344805682225424
+BD.SpecialValues.firstPolynomial : ∀ (x : ℚ), Polynomial.eval x (Polynomial.bernoulli 1) = x - 1 / 2
+BD.SpecialValues.seventhPolynomial : ∀ (x : ℚ),
+  Polynomial.eval x (Polynomial.bernoulli 7) = x ^ 7 - 7 / 2 * x ^ 6 + 7 / 2 * x ^ 5 - 7 / 6 * x ^ 3 + 1 / 6 * x
+@BD.Tails.envelope : ∀ {I : Type u_1} (w x : I → ℝ) (ρ : ℝ),
+  Summable w →
+    (∀ (i : I), 0 ≤ w i) →
+      (∀ (i : I), 0 ≤ x i) → (∀ (i : I), x i ≤ ρ) → ∀ (n : ℕ), ∑' (i : I), w i * x i ^ n ≤ (∑' (i : I), w i) * ρ ^ n
+@BD.Tails.polynomialTail : ∀ {I : Type u_1} (w x : I → ℝ) (ρ : ℝ),
+  Summable w →
+    (∀ (i : I), 0 ≤ w i) →
+      (∀ (i : I), 0 ≤ x i) →
+        (∀ (i : I), x i ≤ ρ) →
+          0 ≤ ρ → ρ < 1 → ∀ (d : ℕ), Filter.Tendsto (fun n => ↑n ^ d * ∑' (i : I), w i * x i ^ n) Filter.atTop (nhds 0)

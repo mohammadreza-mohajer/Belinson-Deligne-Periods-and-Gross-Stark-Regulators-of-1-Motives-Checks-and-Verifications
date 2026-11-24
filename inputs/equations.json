@@ -1,0 +1,266 @@
+[
+  {
+    "label": "eq:intro-comparison",
+    "target": "1a",
+    "status": "Definition",
+    "detail": "Betti to de Rham comparison at infinity."
+  },
+  {
+    "label": "eq:semival",
+    "target": "2.1",
+    "status": "Arithmetic construction",
+    "detail": "Extension of the toric valuation to the semiabelian group."
+  },
+  {
+    "label": "eq:euler-seq",
+    "target": "2.1",
+    "status": "Reduction",
+    "detail": "Injectivity of tame restriction gives the valuation kernel after identifying the connecting map."
+  },
+  {
+    "label": "eq:localeuler",
+    "target": "2.1",
+    "status": "Reduction",
+    "detail": "The cross-multiplied Euler identity and its determinant on split exact rows."
+  },
+  {
+    "label": "eq:globaleuler",
+    "target": "2.1",
+    "status": "Reduction",
+    "detail": "Place-by-place correction in the finite product. Realization and meromorphic continuation are external."
+  },
+  {
+    "label": "eq:archdefect",
+    "target": "2.3",
+    "status": "Reduction",
+    "detail": "Range and rank calculations in the product case. General comparison sequence is external."
+  },
+  {
+    "label": "eq:divnorm",
+    "target": "3.1",
+    "status": "Definition",
+    "detail": "Residue-degree weighted divisor map."
+  },
+  {
+    "label": "eq:sunitseq",
+    "target": "3.1",
+    "status": "Reduction",
+    "detail": "Lifting inside the kernel of the norm once the absolute norm diagram is available."
+  },
+  {
+    "label": "eq:augreal",
+    "target": "3.1",
+    "status": "Definition",
+    "detail": "Comparison with logarithm-weighted finite valuation rows."
+  },
+  {
+    "label": "eq:archformula",
+    "target": "3.1",
+    "status": "Reduction",
+    "detail": "Block determinant and product of period classes. Residue/period comparison is arithmetic."
+  },
+  {
+    "label": "eq:grrelative",
+    "target": "3.1",
+    "status": "Arithmetic identity",
+    "detail": "Dedekind zeta factorization for relative norm tori."
+  },
+  {
+    "label": "eq:invrelative",
+    "target": "3.1",
+    "status": "Reduction",
+    "detail": "Mixed finite-factor correction, formal order and product coefficient."
+  },
+  {
+    "label": "eq:invrelativelead",
+    "target": "3.1",
+    "status": "Reduction",
+    "detail": "Formal product at the expected order with zeta constant and residue ratio supplied."
+  },
+  {
+    "label": "eq:absaug",
+    "target": "3.1",
+    "status": "Arithmetic construction",
+    "detail": "Absolute augmentation by the trace-one column."
+  },
+  {
+    "label": "eq:arbitrary-leading",
+    "target": "3.3",
+    "status": "Reduction",
+    "detail": "Rank bound, removal of t powers of the variable and the leading coefficient of a product."
+  },
+  {
+    "label": "eq:splitprojection",
+    "target": "3.3",
+    "status": "Reduction",
+    "detail": "Surjectivity and equality of kernels at equal finite dimension."
+  },
+  {
+    "label": "eq:relplog",
+    "target": "4.1",
+    "status": "Definition",
+    "detail": "Logarithms of relative units in the local trace-zero subspace."
+  },
+  {
+    "label": "eq:relativepadicvalue",
+    "target": "4.1",
+    "status": "Reduction",
+    "detail": "Normalization of a relative residue. Colmez’s formula is an external arithmetic input."
+  },
+  {
+    "label": "eq:padicS",
+    "target": "4.2",
+    "status": "Reduction",
+    "detail": "Finite product and powers of lower-bounded Taylor factors."
+  },
+  {
+    "label": "eq:splitpadicgerm",
+    "target": "4.3",
+    "status": "Definition and reduction",
+    "detail": "Definition of the reduced branch in the paper; cancellation of powers in Lean."
+  },
+  {
+    "label": "eq:ON",
+    "target": "5.3",
+    "status": "Arithmetic identity",
+    "detail": "Local norm valuation equals residue degree times the normalized valuation."
+  },
+  {
+    "label": "eq:LN",
+    "target": "5.3",
+    "status": "Definition",
+    "detail": "Negative norm logarithm in the chosen branch."
+  },
+  {
+    "label": "eq:RN",
+    "target": "5.3",
+    "status": "Reduction",
+    "detail": "Branch translation and valuation normalization for actual matrices."
+  },
+  {
+    "label": "eq:evaluation",
+    "target": "5.2",
+    "status": "Reduction",
+    "detail": "Affine isolation from injectivity and disjointness of the logarithm image."
+  },
+  {
+    "label": "eq:normalizedmatrix",
+    "target": "5.3",
+    "status": "Reduction",
+    "detail": "Order of the inverse factors and compatibility under basis change."
+  },
+  {
+    "label": "eq:local-sign",
+    "target": "5.4",
+    "status": "Arithmetic convention",
+    "detail": "Order of cup factors and sign of local reciprocity."
+  },
+  {
+    "label": "eq:liftgraph",
+    "target": "5.4",
+    "status": "Matrix identity",
+    "detail": "Obstruction equals zero exactly on the negative transpose graph."
+  },
+  {
+    "label": "eq:principal-cup",
+    "target": "5.4",
+    "status": "Matrix identity",
+    "detail": "All principal minors and their signs over arbitrary commutative rings."
+  },
+  {
+    "label": "eq:decomp",
+    "target": "6.1",
+    "status": "Representation theory",
+    "detail": "Decomposition of the odd permutation module and its commutant."
+  },
+  {
+    "label": "eq:blockpoly",
+    "target": "6.1",
+    "status": "Reduction",
+    "detail": "The full characteristic-polynomial product for different block dimensions and arbitrary multiplicities. The representation-theoretic decomposition supplies the blocks."
+  },
+  {
+    "label": "eq:lineardimension",
+    "target": "6.1",
+    "status": "Arithmetic and representation theory",
+    "detail": "Dimension of the algebraic span of actual simultaneous entries."
+  },
+  {
+    "label": "eq:complexgross",
+    "target": "6.4",
+    "status": "Arithmetic identity",
+    "detail": "Artin L-value and the local complex Euler slopes."
+  },
+  {
+    "label": "eq:normcoeff",
+    "target": "6.4",
+    "status": "Definition and reduction",
+    "detail": "Normalization of a Taylor coefficient, including when the coefficient is zero."
+  },
+  {
+    "label": "eq:factorcoeff",
+    "target": "6.4",
+    "status": "Reduction",
+    "detail": "The supplied Taylor coefficient is normalized, and the determinant of the repeated block sum is the exact product with multiplicities."
+  },
+  {
+    "label": "eq:rankone-affine",
+    "target": "6.6",
+    "status": "Reduction",
+    "detail": "Linear trace-multiplicity equations under affine independence."
+  },
+  {
+    "label": "eq:binomial",
+    "target": "6.8",
+    "status": "Algebraic identity",
+    "detail": "The full exponent-fiber ideal, the monomial independence criterion and algebraic independence of determinants of disjoint generic blocks of positive size."
+  },
+  {
+    "label": "eq:germbinomials",
+    "target": "7.1",
+    "status": "Reduction",
+    "detail": "The complete kernel of the exponent map. Injectivity for the specified p-adic germs is a separate step."
+  },
+  {
+    "label": "eq:sampleformula",
+    "target": "7.2",
+    "status": "Arithmetic and analytic identity",
+    "detail": "Explicit Artin functional equation and archimedean gamma factors."
+  },
+  {
+    "label": "eq:squarefree",
+    "target": "7.2",
+    "status": "Arithmetic identity",
+    "detail": "Squarefree Euler coefficients at specified unramified primes."
+  },
+  {
+    "label": "eq:clearedgerms",
+    "target": "7.1",
+    "status": "Reduction",
+    "detail": "A nonzero solution to any family of algebraic sample equations descends to the base field."
+  },
+  {
+    "label": "eq:frequency",
+    "target": "7.1",
+    "status": "Reduction",
+    "detail": "A normalized isolated polynomial with vanishing tail is zero; all weights at a scale vanish under the formal sample hypotheses."
+  },
+  {
+    "label": "eq:allartinleading",
+    "target": "7.4",
+    "status": "Reduction",
+    "detail": "Formal coefficient extraction and multiplicative cancellation. Brauer and analytic identification remain external."
+  },
+  {
+    "label": "eq:s3coeff",
+    "target": "8a",
+    "status": "Algebraic and finite identities",
+    "detail": "Actual permutation character table, algebraic coefficient identity and unscaled factor of two."
+  },
+  {
+    "label": "eq:abelianext",
+    "target": "9.1",
+    "status": "Arithmetic construction",
+    "detail": "Exact sequence of 1-motives with abelian quotient. The diagonal determinant identity is checked."
+  }
+]

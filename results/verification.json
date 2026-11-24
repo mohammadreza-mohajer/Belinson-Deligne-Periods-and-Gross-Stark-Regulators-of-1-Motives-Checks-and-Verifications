@@ -1,0 +1,18 @@
+{
+  "arithmetic_fields": 36,
+  "labelled_equations": 44,
+  "lean": "4.19.0",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "modules": 26,
+  "negative_controls": 3,
+  "numbered_items": 30,
+  "observed_kernel_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "paper_sha256": "9532aeec2a522f80cf437ba13d7c5a5c79c8ec27f51c7299702a0aab392220e9",
+  "public_theorems": 135,
+  "python_agrees_with_lean": true,
+  "recompiled_all_project_modules": true
+}

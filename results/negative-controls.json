@@ -1,0 +1,17 @@
+[
+  {
+    "id": "opposite_quadratic_sign",
+    "outcome": "rejected as false",
+    "statement": "BD.Arithmetic.delta 7 = 1"
+  },
+  {
+    "id": "off_by_one_character_sum",
+    "outcome": "rejected as false",
+    "statement": "BD.Arithmetic.powerSum 1 = -8243"
+  },
+  {
+    "id": "incorrect_normalized_slope",
+    "outcome": "rejected as false",
+    "statement": "((28 : Int) * 47) % 49 = 41"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "opposite_quadratic_sign",
+    "proposition": "BD.Arithmetic.delta 7 = 1"
+  },
+  {
+    "id": "off_by_one_character_sum",
+    "proposition": "BD.Arithmetic.powerSum 1 = -8243"
+  },
+  {
+    "id": "incorrect_normalized_slope",
+    "proposition": "((28 : Int) * 47) % 49 = 41"
+  }
+]

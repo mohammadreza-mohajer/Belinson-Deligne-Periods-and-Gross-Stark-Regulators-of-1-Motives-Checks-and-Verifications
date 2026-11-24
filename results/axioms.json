@@ -1,0 +1,565 @@
+{
+  "BD.Applications.grossCoefficient": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Applications.grossExactIffNoPureLift": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Applications.ordinaryProduct": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Applications.ordinaryUnitRoot": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.bernoulliCrosscheckSix": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.bernoulliCrosscheckZero": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.characterMass": [],
+  "BD.Arithmetic.cubicDiscriminant": [],
+  "BD.Arithmetic.cubicFactorsSeven": [],
+  "BD.Arithmetic.cubicRootTest": [],
+  "BD.Arithmetic.cubicRootsTwentyNine": [],
+  "BD.Arithmetic.deltaAtSeven": [],
+  "BD.Arithmetic.delta_legendre": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.discrBetweenSquares": [],
+  "BD.Arithmetic.discriminantData": [],
+  "BD.Arithmetic.exactMinusFortyTwo": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.exactMinusTwelve": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.exactSecants": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.interpolatedResidues": [],
+  "BD.Arithmetic.quadraticLocalData": [],
+  "BD.Arithmetic.quadraticNorms": [],
+  "BD.Arithmetic.secantFortyTwo": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.secantSix": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.secantTwelve": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.signAt_eq_legendre": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Arithmetic.signTable229": [],
+  "BD.Arithmetic.signTableThree": [],
+  "BD.Arithmetic.splitAtEleven": [],
+  "BD.Arithmetic.sumOne": [],
+  "BD.Arithmetic.uniqueSlopes": [],
+  "BD.Arithmetic.valueMinusSix": [],
+  "BD.Arithmetic.valueZero": [],
+  "BD.Artin.isolateScale": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Blocks.characteristicSum": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Blocks.determinantSum": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Blocks.repeatedCharpoly": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Blocks.repeatedDeterminant": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Blocks.repeatedTrace": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Blocks.singleSizeCharpoly": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Characters.affineTrace": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Characters.coefficientBinomial": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Characters.liftDimensionBound": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Characters.monomialProduct": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Characters.quadraticIndependence": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Characters.stabilizerCriterion": [
+    "propext"
+  ],
+  "BD.CoefficientField.fieldOfTrace": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.CoefficientField.fixesGenerators": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Cubic.discriminantNotSquare": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Cubic.factorSeven": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Cubic.irreducible": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Cubic.noRationalRoot": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Cubic.threeRealRoots": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Euler.blockFactor": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Euler.constantFactor": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Euler.correction": [],
+  "BD.Euler.inertSignFactor": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.characterRelation": [],
+  "BD.Examples.coefficientIdentity": [
+    "propext"
+  ],
+  "BD.Examples.decompositions": [],
+  "BD.Examples.derivativeNormalization": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.eightPow": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.localDimensions": [],
+  "BD.Examples.quotientIdentity": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.sevenSquare": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.sevenTangent": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.squareZeroExpansion": [
+    "propext"
+  ],
+  "BD.Examples.towerOrder": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Examples.unscaledIdentity": [
+    "propext"
+  ],
+  "BD.GenericDet.independentDeterminants": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.GenericDet.leftInverse": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.GenericDet.specializeBlock": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Interpolation.descendRows": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Interpolation.escapingPolynomial": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Interpolation.factorialDominates": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Interpolation.leadingFrequency": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Jet.firstCoeffMul": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Jet.firstOrderFailure": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Jet.hiddenDerivative": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Jet.integralIwasawaSlope": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Jet.logTermValuation": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Jet.slopeFromSample": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Linear.criticalProjection": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Linear.extensionCharpoly": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Linear.extensionDet": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Linear.periodProduct": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Linear.projectionLoss": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Linear.relativeLift": [
+    "propext"
+  ],
+  "BD.Linear.residueQuotient": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.branchShift": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.descentConjugacy": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.determinantConjugacy": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.existsLift_iff_det": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.liftGraph": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.normalizeValuations": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Matrices.principalMinorExpansion": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Monomials.genericBlockIndependence": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Monomials.independence": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Monomials.injectiveExponentCriterion": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.PadicJet.differenceQuotient": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.PadicJet.existsUniqueNegativeSix": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.PadicJet.integralSeriesSummable": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.PadicJet.negativeSixSample": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.PadicJet.reduceValue": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.PadicJet.splitValue": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Permutations.charactersOfAction": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Permutations.enumerationComplete": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Permutations.enumerationUnique": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Permutations.orderSixInduction": [
+    "propext"
+  ],
+  "BD.Permutations.permutationsInjective": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Realizations.affineEvaluation": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Realizations.inertiaKernel": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Realizations.normRatio": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Realizations.oddLogKernel": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Realizations.splitRange": [
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Relations.binomial_mem": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Relations.brauer_clear": [],
+  "BD.Relations.kernel_eq_fiberIdeal": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Relations.realized_kernel": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Separation.moments_separate": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Separation.separator": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Separation.weighted_moments": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.complexLeading": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.ellipticExceptional": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.exactOrder": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.finiteProduct": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.power": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.product": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.splitCancellation": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Series.term_coeff": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.SpecialValues.actualFirstValue": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.SpecialValues.actualSeventhValue": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.SpecialValues.firstPolynomial": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.SpecialValues.seventhPolynomial": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Tails.envelope": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "BD.Tails.polynomialTail": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}
